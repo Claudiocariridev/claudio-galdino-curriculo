@@ -17,9 +17,9 @@
             
             <div class="text-center md:text-left">
                 <h1 class="text-3xl md:text-5xl font-bold">Claudio Ramalho Galdino</h1>
-                <h2 class="text-xl md:text-2xl mt-2 text-amber-100">Advogado - OAB/CE 30.802 | Dr. Galdino</h2>
+                <h2 class="text-xl md:text-2xl mt-2 text-amber-100">Advogado - OAB/CE | Dr. Galdino</h2>
                 <p class="mt-4 text-sm md:text-base text-amber-50">
-                    Juazeiro do Norte, Cariri (CE)
+                    📍 Juazeiro do Norte, Cariri (CE)
                 </p>
             </div>
         </header>
@@ -29,7 +29,7 @@
             <section class="mb-8">
                 <h3 class="text-2xl font-bold text-gray-700 border-b-2 border-[#997a33] pb-2 mb-4">Perfil Profissional</h3>
                 <p class="text-gray-600">
-                    Advogado atuante na região do Cariri (CE) desde 2014, com sólida expertise técnica e liderança institucional. Especialista em Direito Processual Civil pela URCA, com currículo focado em Direitos Humanos. Destacada atuação na defesa em processos administrativos disciplinares perante a CGD e repartições militares/públicas.
+                    Advogado atuante na região do Cariri (CE) há mais de <span id="anos" class="font-bold text-gray-800"></span> anos, com sólida expertise técnica e liderança institucional. Especialista em Direito Processual Civil pela URCA, com currículo focado em Direitos Humanos. Destacada atuação na defesa em processos administrativos disciplinares perante a CGD e repartições militares/públicas.
                 </p>
             </section>
 
@@ -75,6 +75,9 @@
         </footer>
 
     </div>
+    <script>
+        document.getElementById('anos').textContent = new Date().getFullYear() - 2014;
+    </script>
 
 </body>
 </html>
